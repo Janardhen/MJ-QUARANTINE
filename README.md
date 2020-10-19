@@ -6,6 +6,9 @@ Left and Right arrows to move
 SpaceBar to Jump
 Tab to attack
 
+### Reflection
+  It was nice but then I feel I am not much comfortable with reading documents. I need to learn and fix that as many things are mentioned in it. I also found the unoffical godot discord server is very useful when it comes to doubt instantly. I have made uses of it the last week. I think I followed the style guide but I am still unsure as I never crossed that bar. Overall, it was a nice experience.
+
 ### Self Evaluation
 
 Meeting the following criteria earns a D or better grade; failing to meet these criteria earns an F grade:
@@ -56,5 +59,5 @@ Virus pictures from https://www.iconpacks.net/free-icon/virus-3129.html
 https://pixabay.com/vectors/coronavirus-icon-red-corona-virus-5107804/
 https://www.iconpacks.net/free-icon/corona-virus-outbreak-3176.html
 
-Sanitizer image by  rawpixel.com and edited by myself at www.pixlr.com
+Sanitizer image by  www.rawpixel.com and edited by myself at www.pixlr.com
 
