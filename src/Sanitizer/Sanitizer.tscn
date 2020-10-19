@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/effects/image-from-rawpixel-id-2292761-png-6-3.png" type="Texture" id=1]
+[ext_resource path="res://assets/effects/image-from-rawpixel-id-2292761-png-6-5.png" type="Texture" id=2]
+[ext_resource path="res://assets/effects/image-from-rawpixel-id-2292761-png-6-4.png" type="Texture" id=3]
+[ext_resource path="res://assets/effects/image-from-rawpixel-id-2292761-png-6-2.png" type="Texture" id=4]
+[ext_resource path="res://src/Sanitizer/Sanitizer.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "sanitizer",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5.50362, 4.58476 )
+
+[node name="Fireball" type="Area2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.0296927, -0.0407661 )
+scale = Vector2( 0.0099975, 0.00750169 )
+frames = SubResource( 1 )
+animation = "sanitizer"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0400269, -0.0151694 )
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+visible = false
+[connection signal="body_entered" from="." to="." method="_on_Fireball_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
